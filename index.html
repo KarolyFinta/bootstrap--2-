@@ -13,11 +13,23 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="formazas.css">
+    <style>
+      body {
+        background-image: url(hatter.jpg);
+      }
+
+      main {
+        background-color: white;
+      }
+
+      .kep {
+        border-radius: 1000px;
+      }
+    </style>
   </head>
 
   <body>
-    <main>
+    <main class="row">
       <header>
         <!-- Carousel -->
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -97,8 +109,8 @@
           </button>
         </div>
       </header>
-      <!-- Grey with black text -->
-      <nav class="navbar navbar-expand-sm bg-light navbar-light">
+      <!-- Blue background with white text -->
+      <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
         <div class="container-fluid">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -116,22 +128,16 @@
           </ul>
         </div>
       </nav>
-
-      <!-- Black background with white text -->
-      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">...</nav>
-
-      <!-- Blue background with white text -->
-      <nav class="navbar navbar-expand-sm bg-primary navbar-dark">...</nav>
       <aside class="col-md-4">
-        <ul>
-          <li>Vadálló kövek</li>
-          <li>Tisza-tó</li>
-          <li>Beliczay-sziget</li>
-          <li>Burok völgy</li>
+        <ul class="list-group">
+          <li class="list-group-item">Vadálló kövek</li>
+          <li class="list-group-item">Tisza-tó</li>
+          <li class="list-group-item">Beliczay-sziget</li>
+          <li class="list-group-item">Burok völgy</li>
         </ul>
       </aside>
       <article class="col-md-8">
-        <table>
+        <table class="table">
           <tr>
             <th>Kirándulás helye</th>
             <th>Megtett táv</th>
@@ -158,19 +164,51 @@
             <td>gyalogtúra</td>
           </tr>
         </table>
-        <img src="kepek/_DSC4503-2.jpeg" alt="nem töltött be a kép" />
-        <img src="kepek/_DSC3751.jpeg" alt="nem töltött be a kép" />
-        <img src="kepek/_DSC4641.jpeg" alt="nem töltött be a kép" />
+        <img
+          class="img-thumbnail col-md-3"
+          src="kepek/_DSC4503-2.jpeg"
+          alt="nem töltött be a kép"
+        />
+        <img
+          class="img-thumbnail col-md-3"
+          src="kepek/_DSC3751.jpeg"
+          alt="nem töltött be a kép"
+        />
+        <img
+          class="img-thumbnail col-md-3"
+          src="kepek/_DSC4641.jpeg"
+          alt="nem töltött be a kép"
+        />
       </article>
-      <div>
-        <div class="kep"><img src="kepek/_DSC4601.jpeg" alt="kutya" /></div>
-        <h2>Dézi esőben nem szeret fotózni</h2>
-        <p>Hősiesen, és csuron vizesen türte, amíg minden gombát lefotóztunk</p>
+      <div class="border row align-items-center">
+        <div class="col-md-1">
+          <img
+            class="rounded-circle img-fluid"
+            src="kepek/_DSC4601.jpeg"
+            alt="kutya"
+          />
+        </div>
+
+        <div class="col-md-10">
+          <h2>Dézi esőben nem szeret fotózni</h2>
+          <p>
+            Hősiesen, és csuron vizesen tűrte, amíg minden gombát lefotóztunk
+          </p>
+        </div>
       </div>
-      <div>
-        <div class="kep"><img src="kepek/_DSC4655.jpeg" alt="kutya" /></div>
-        <h2>Sári nagyon várta már, hogy hazamenjünk</h2>
-        <p>Kis pofácskáját mindenbe beledugta, amibe nem kellett volna</p>
+
+      <div class="border row align-items-center">
+        <div class="col-md-1">
+          <img
+            class="rounded-circle img-fluid"
+            src="kepek/_DSC4655.jpeg"
+            alt="kutya"
+          />
+        </div>
+        <div class="col-md-10">
+          <h2>Sári nagyon várta már, hogy hazamenjünk</h2>
+          <p>Kis pofácskáját mindenbe beledugta, amibe nem kellett volna</p>
+        </div>
       </div>
     </main>
   </body>
